@@ -11,12 +11,14 @@
 
 html{
     scroll-behavior:smooth;
+    overflow-x:hidden;
 }
 
 body{
     background:#050816;
     color:white;
     overflow-x:hidden;
+    width:100%;
 }
 
 img{
@@ -43,18 +45,6 @@ img{
 }
 
 /* =========================
-   TRANSITIONS
-========================= */
-
-button,
-a,
-.feature-card,
-.contact-card,
-.map-pin{
-    transition:0.3s ease;
-}
-
-/* =========================
    HEADER
 ========================= */
 
@@ -76,6 +66,8 @@ header{
     background:rgba(5,8,22,0.75);
 
     backdrop-filter:blur(10px);
+
+    transition:0.3s;
 }
 
 header.scrolled{
@@ -84,7 +76,7 @@ header.scrolled{
     padding:15px 8%;
 
     box-shadow:
-    0 0 20px rgba(0,0,0,0.3);
+    0 0 20px rgba(0,0,0,0.35);
 }
 
 /* =========================
@@ -123,6 +115,8 @@ nav a{
 
     font-size:15px;
     font-weight:500;
+
+    transition:0.3s;
 }
 
 nav a:hover{
@@ -146,7 +140,7 @@ nav a:hover{
 }
 
 /* =========================
-   HEADER BUTTON
+   BUTTON HEADER
 ========================= */
 
 .header-btn{
@@ -163,6 +157,8 @@ nav a:hover{
     font-weight:600;
 
     cursor:pointer;
+
+    transition:0.3s;
 }
 
 .header-btn:hover{
@@ -185,7 +181,7 @@ nav a:hover{
 
     gap:50px;
 
-    padding:180px 8% 100px;
+    padding:140px 8% 80px;
 
     position:relative;
 }
@@ -239,6 +235,7 @@ nav a:hover{
 
 .hero-text h1{
     font-size:70px;
+
     line-height:1.1;
 
     margin-bottom:25px;
@@ -265,6 +262,7 @@ nav a:hover{
 .hero-buttons{
     display:flex;
     gap:20px;
+
     flex-wrap:wrap;
 
     margin-bottom:50px;
@@ -283,15 +281,16 @@ nav a:hover{
 
     text-decoration:none;
 
-    display:inline-flex;
+    display:flex;
     justify-content:center;
     align-items:center;
 
-    border:none;
+    transition:0.3s;
 }
 
 .primary-btn{
     background:#d4af37;
+
     color:#050816;
 }
 
@@ -303,11 +302,11 @@ nav a:hover{
 }
 
 .secondary-btn{
+    background:transparent;
+
     border:1px solid #d4af37;
 
     color:#d4af37;
-
-    background:transparent;
 }
 
 .secondary-btn:hover{
@@ -334,9 +333,17 @@ nav a:hover{
 
     border-radius:18px;
 
+    min-width:130px;
+
     border:1px solid rgba(255,255,255,0.05);
 
-    min-width:130px;
+    transition:0.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-5px);
+
+    border-color:#d4af37;
 }
 
 .stat-box h3{
@@ -435,6 +442,8 @@ nav a:hover{
     border-radius:20px;
 
     border:1px solid transparent;
+
+    transition:0.3s;
 }
 
 .feature-card:hover{
@@ -456,14 +465,14 @@ nav a:hover{
     justify-content:center;
     align-items:center;
 
-    background:
-    rgba(212,175,55,0.1);
+    background:rgba(212,175,55,0.1);
 
     margin-bottom:25px;
 }
 
 .feature-icon i{
     font-size:28px;
+
     color:#d4af37;
 }
 
@@ -473,6 +482,7 @@ nav a:hover{
 
 .feature-card p{
     color:#94a3b8;
+
     line-height:1.7;
 }
 
@@ -538,6 +548,7 @@ nav a:hover{
 
 .center-icon i{
     color:#050816;
+
     font-size:32px;
 }
 
@@ -549,8 +560,7 @@ nav a:hover{
 
     border-radius:50%;
 
-    background:
-    rgba(212,175,55,0.1);
+    background:rgba(212,175,55,0.1);
 
     top:50%;
     left:50%;
@@ -595,6 +605,7 @@ nav a:hover{
 
 .map-pin span{
     color:#cbd5e1;
+
     font-size:14px;
 }
 
@@ -645,6 +656,7 @@ nav a:hover{
 .contact-info{
     display:flex;
     flex-direction:column;
+
     gap:20px;
 }
 
@@ -659,6 +671,8 @@ nav a:hover{
     align-items:center;
 
     gap:20px;
+
+    transition:0.3s;
 }
 
 .contact-card:hover{
@@ -671,8 +685,7 @@ nav a:hover{
 
     border-radius:15px;
 
-    background:
-    rgba(212,175,55,0.1);
+    background:rgba(212,175,55,0.1);
 
     display:flex;
     justify-content:center;
@@ -681,6 +694,7 @@ nav a:hover{
 
 .contact-icon i{
     color:#d4af37;
+
     font-size:24px;
 }
 
@@ -743,6 +757,8 @@ nav a:hover{
     font-weight:700;
 
     cursor:pointer;
+
+    transition:0.3s;
 }
 
 .send-btn:hover{
@@ -790,9 +806,9 @@ nav a:hover{
 
     background:#111827;
 
-    border:1px solid rgba(212,175,55,0.2);
-
     border-radius:25px;
+
+    border:1px solid rgba(212,175,55,0.2);
 
     padding:40px;
 
@@ -814,7 +830,20 @@ nav a:hover{
 
     line-height:1.8;
 
-    margin-bottom:20px;
+    margin-bottom:18px;
+}
+
+.close-modal{
+    position:absolute;
+
+    top:15px;
+    right:25px;
+
+    font-size:35px;
+
+    color:#d4af37;
+
+    cursor:pointer;
 }
 
 .accept-btn{
@@ -835,26 +864,12 @@ nav a:hover{
     cursor:pointer;
 
     margin-top:10px;
+
+    transition:0.3s;
 }
 
 .accept-btn:hover{
     transform:translateY(-3px);
-
-    box-shadow:
-    0 0 20px rgba(212,175,55,0.3);
-}
-
-.close-modal{
-    position:absolute;
-
-    top:18px;
-    right:25px;
-
-    font-size:35px;
-
-    color:#d4af37;
-
-    cursor:pointer;
 }
 
 /* =========================
@@ -889,6 +904,8 @@ footer{
     color:#d4af37;
 
     cursor:pointer;
+
+    transition:0.3s;
 }
 
 .socials i:hover{
@@ -896,7 +913,7 @@ footer{
 }
 
 /* =========================
-   ANIMATIONS
+   ANIMAÇÕES
 ========================= */
 
 @keyframes pulse{
@@ -985,7 +1002,9 @@ footer{
 @media(max-width:768px){
 
     header{
-        padding:20px;
+        padding:18px 20px;
+
+        flex-wrap:wrap;
     }
 
     .menu-toggle{
@@ -995,7 +1014,7 @@ footer{
     nav{
         position:absolute;
 
-        top:100px;
+        top:90px;
         left:0;
 
         width:100%;
@@ -1009,6 +1028,9 @@ footer{
         gap:25px;
 
         display:none;
+
+        border-top:
+        1px solid rgba(255,255,255,0.05);
     }
 
     nav.active{
@@ -1020,7 +1042,11 @@ footer{
     }
 
     .hero{
-        padding-top:220px;
+        flex-direction:column;
+
+        text-align:center;
+
+        padding-top:150px;
     }
 
     .hero-text h1{
@@ -1034,6 +1060,10 @@ footer{
     .circle{
         width:300px;
         height:300px;
+    }
+
+    .map-container{
+        height:500px;
     }
 
     footer{
@@ -1067,16 +1097,12 @@ footer{
         width:220px;
     }
 
-    .map-container{
-        height:500px;
-    }
-
     .terms-content{
-        padding:30px 25px;
+        padding:30px 20px;
     }
 
     .terms-content h2{
-        font-size:24px;
+        font-size:26px;
     }
 
 }
