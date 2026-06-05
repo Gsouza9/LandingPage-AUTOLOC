@@ -9,14 +9,15 @@
     <title>AUTOLOC</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -24,7 +25,7 @@
 
     <!-- HEADER -->
 
-    <header>
+    <header id="header">
 
         <div class="logo">
             <h1><span>AUTO</span>LOC</h1>
@@ -32,13 +33,13 @@
 
         <!-- MENU MOBILE -->
 
-        <div class="menu-toggle">
+        <div class="menu-toggle" id="menu-toggle">
             ☰
         </div>
 
         <!-- NAV -->
 
-        <nav>
+        <nav id="nav">
 
             <a href="#">Início</a>
             <a href="#features">Serviços</a>
@@ -80,7 +81,7 @@
 
             <div class="hero-buttons">
 
-                <a href="#contact" class="primary-btn">
+                <a href="#map" class="primary-btn">
                     Explorar Agora
                 </a>
 
@@ -106,14 +107,14 @@
 
                 <div class="stat-box">
                     <h3>100%</h3>
-                    <p>Responsivo</p>
+                    <p>Mobile</p>
                 </div>
 
             </div>
 
         </div>
 
-        <!-- IMAGE -->
+        <!-- HERO IMAGE -->
 
         <div class="hero-image">
 
@@ -142,7 +143,7 @@
 
         <div class="features-grid">
 
-            <!-- CARD 1 -->
+            <!-- CARD -->
 
             <div class="feature-card">
 
@@ -159,7 +160,7 @@
 
             </div>
 
-            <!-- CARD 2 -->
+            <!-- CARD -->
 
             <div class="feature-card">
 
@@ -176,7 +177,7 @@
 
             </div>
 
-            <!-- CARD 3 -->
+            <!-- CARD -->
 
             <div class="feature-card">
 
@@ -354,25 +355,40 @@
 
                 <div class="input-group">
 
-                    <input type="text" placeholder="Seu nome" required>
+                    <input
+                        type="text"
+                        placeholder="Seu nome"
+                        required
+                    >
 
                 </div>
 
                 <div class="input-group">
 
-                    <input type="email" placeholder="Seu e-mail" required>
+                    <input
+                        type="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
 
                 </div>
 
                 <div class="input-group">
 
-                    <input type="text" placeholder="Seu telefone">
+                    <input
+                        type="text"
+                        placeholder="Seu telefone"
+                    >
 
                 </div>
 
                 <div class="input-group">
 
-                    <textarea placeholder="Digite sua mensagem..." rows="6" required></textarea>
+                    <textarea
+                        placeholder="Digite sua mensagem..."
+                        rows="6"
+                        required
+                    ></textarea>
 
                 </div>
 
@@ -396,41 +412,56 @@
 
         <div class="terms-content">
 
+            <!-- FECHAR -->
+
             <span class="close-modal" id="closeTerms">
                 &times;
             </span>
 
-            <h2>Termos de Concordância</h2>
+            <h2>
+                Termos de Uso e Privacidade
+            </h2>
 
             <p>
-                Ao utilizar a plataforma AutoLoc, o usuário concorda
-                com os Termos de Uso, Política de Privacidade e com
-                o compartilhamento de localização para melhorar a
-                experiência na busca de serviços automotivos.
+                Ao utilizar a plataforma AutoLoc,
+                o usuário concorda com a coleta e utilização
+                de dados necessários para funcionamento do sistema.
             </p>
 
             <p>
-                O usuário também concorda com o fornecimento e uso
-                de dados necessários para funcionamento da plataforma,
-                incluindo informações como nome, telefone, CPF, CNPJ,
-                CEP, endereço e demais dados cadastrais.
+                Alguns dados podem incluir:
             </p>
 
             <p>
-                Essas informações poderão ser utilizadas para
-                autenticação, segurança, comunicação, localização
-                de serviços próximos e melhoria da experiência
-                dentro da plataforma AutoLoc.
+                • Nome completo<br>
+                • CPF e CNPJ<br>
+                • CEP e endereço<br>
+                • Número de telefone<br>
+                • E-mail<br>
+                • Dados de localização
             </p>
 
             <p>
-                A AutoLoc não se responsabiliza por negociações,
-                pagamentos ou serviços realizados entre usuários
-                e empresas cadastradas na plataforma.
+                Essas informações são utilizadas para:
             </p>
+
+            <p>
+                • Melhorar a experiência do usuário<br>
+                • Localizar serviços automotivos próximos<br>
+                • Garantir segurança da plataforma<br>
+                • Facilitar contato entre usuários e empresas
+            </p>
+
+            <p>
+                A AutoLoc segue práticas de segurança
+                e privacidade para proteger os dados
+                fornecidos pelos usuários.
+            </p>
+
+            <!-- BUTTON -->
 
             <button class="accept-btn" id="closeButton">
-                Entendi
+                Entendi e Concordo
             </button>
 
         </div>
