@@ -9,42 +9,18 @@
     <title>AUTOLOC</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- ICONS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
-  <!-- INTRO AUTOLOC -->
-
-<div class="intro">
-
-    <div class="intro-glow"></div>
-
-    <div class="gear-container">
-
-        <i class="fa-solid fa-gear gear gear-big"></i>
-
-        <i class="fa-solid fa-gear gear gear-small"></i>
-
-    </div>
-
-    <div class="intro-content">
-
-        <p class="intro-loading">
-            iniciando sistema automotivo
-        </p>
-
-    </div>
-
-</div>
 
     <!-- HEADER -->
 
@@ -54,14 +30,24 @@
             <h1><span>AUTO</span>LOC</h1>
         </div>
 
+        <!-- MENU MOBILE -->
+
+        <div class="menu-toggle">
+            ☰
+        </div>
+
+        <!-- NAV -->
+
         <nav>
 
             <a href="#">Início</a>
-            <a href="#">Serviços</a>
-            <a href="#">Empresas</a>
-            <a href="#">Contato</a>
+            <a href="#features">Serviços</a>
+            <a href="#map">Empresas</a>
+            <a href="#contact">Contato</a>
 
         </nav>
+
+        <!-- BUTTON -->
 
         <button class="header-btn">
             Começar Agora
@@ -90,19 +76,44 @@
                 utilizando geolocalização em tempo real.
             </p>
 
+            <!-- BUTTONS -->
+
             <div class="hero-buttons">
 
-                <button class="primary-btn">
+                <a href="#contact" class="primary-btn">
                     Explorar Agora
-                </button>
+                </a>
 
-                <button class="secondary-btn">
+                <button class="secondary-btn" id="openTerms">
                     Saiba Mais
                 </button>
 
             </div>
 
+            <!-- STATS -->
+
+            <div class="hero-stats">
+
+                <div class="stat-box">
+                    <h3>+500</h3>
+                    <p>Empresas</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>24h</h3>
+                    <p>Suporte</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Responsivo</p>
+                </div>
+
+            </div>
+
         </div>
+
+        <!-- IMAGE -->
 
         <div class="hero-image">
 
@@ -116,7 +127,7 @@
 
     <!-- FEATURES -->
 
-    <section class="features">
+    <section class="features" id="features">
 
         <div class="section-title">
 
@@ -130,6 +141,8 @@
         </div>
 
         <div class="features-grid">
+
+            <!-- CARD 1 -->
 
             <div class="feature-card">
 
@@ -146,6 +159,8 @@
 
             </div>
 
+            <!-- CARD 2 -->
+
             <div class="feature-card">
 
                 <div class="feature-icon">
@@ -160,6 +175,8 @@
                 </p>
 
             </div>
+
+            <!-- CARD 3 -->
 
             <div class="feature-card">
 
@@ -180,231 +197,245 @@
 
     </section>
 
-    <!-- MAP SECTION -->
+    <!-- MAP -->
 
-<section class="services-map">
+    <section class="services-map" id="map">
 
-    <div class="section-title">
+        <div class="section-title">
 
-        <h2>Onde a AutoLoc Atua</h2>
+            <h2>Onde a AutoLoc Atua</h2>
 
-        <p>
-            Conectamos motoristas aos principais
-            serviços automotivos da região.
-        </p>
-
-    </div>
-
-    <div class="map-container">
-
-        <!-- GRID -->
-
-        <div class="map-grid"></div>
-
-        <!-- CENTRAL -->
-
-        <div class="center-location">
-
-            <div class="center-pulse"></div>
-
-            <div class="center-icon">
-                <i class="fa-solid fa-car"></i>
-            </div>
+            <p>
+                Conectamos motoristas aos principais
+                serviços automotivos da região.
+            </p>
 
         </div>
 
-        <!-- PINS -->
+        <div class="map-container">
 
-        <div class="map-pin pin-1">
+            <!-- GRID -->
 
-            <div class="pin-icon">
-                <i class="fa-solid fa-wrench"></i>
-            </div>
+            <div class="map-grid"></div>
 
-            <span>Oficinas</span>
+            <!-- CENTER -->
 
-        </div>
+            <div class="center-location">
 
-        <div class="map-pin pin-2">
+                <div class="center-pulse"></div>
 
-            <div class="pin-icon">
-                <i class="fa-solid fa-car-side"></i>
-            </div>
-
-            <span>Locadoras</span>
-
-        </div>
-
-        <div class="map-pin pin-3">
-
-            <div class="pin-icon">
-                <i class="fa-solid fa-box"></i>
-            </div>
-
-            <span>Peças</span>
-
-        </div>
-
-        <div class="map-pin pin-4">
-
-            <div class="pin-icon">
-                <i class="fa-solid fa-gauge"></i>
-            </div>
-
-            <span>Pneus</span>
-
-        </div>
-
-        <div class="map-pin pin-5">
-
-            <div class="pin-icon">
-                <i class="fa-solid fa-bolt"></i>
-            </div>
-
-            <span>Elétrica</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <!-- CONTACT SECTION -->
-
-<section class="contact">
-
-    <div class="section-title">
-
-        <h2>Entre em Contato</h2>
-
-        <p>
-            Tire dúvidas, solicite informações ou
-            converse com a equipe da AutoLoc.
-        </p>
-
-    </div>
-
-    <div class="contact-container">
-
-        <!-- LEFT -->
-
-        <div class="contact-info">
-
-            <div class="contact-card">
-
-                <div class="contact-icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-
-                <div>
-                    <h3>Telefone</h3>
-                    <p>(11) 97998-6400</p>
+                <div class="center-icon">
+                    <i class="fa-solid fa-car"></i>
                 </div>
 
             </div>
 
-            <div class="contact-card">
+            <!-- PINS -->
 
-                <div class="contact-icon">
-                    <i class="fa-brands fa-whatsapp"></i>
+            <div class="map-pin pin-1">
+
+                <div class="pin-icon">
+                    <i class="fa-solid fa-wrench"></i>
                 </div>
 
-                <div>
-                    <h3>WhatsApp</h3>
-                    <p>(11) 94512-1465</p>
+                <span>Oficinas</span>
+
+            </div>
+
+            <div class="map-pin pin-2">
+
+                <div class="pin-icon">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+
+                <span>Locadoras</span>
+
+            </div>
+
+            <div class="map-pin pin-3">
+
+                <div class="pin-icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+
+                <span>Peças</span>
+
+            </div>
+
+            <div class="map-pin pin-4">
+
+                <div class="pin-icon">
+                    <i class="fa-solid fa-gauge"></i>
+                </div>
+
+                <span>Pneus</span>
+
+            </div>
+
+            <div class="map-pin pin-5">
+
+                <div class="pin-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <span>Elétrica</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+
+            <h2>Entre em Contato</h2>
+
+            <p>
+                Tire dúvidas, solicite informações ou
+                converse com a equipe da AutoLoc.
+            </p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <!-- INFO -->
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h3>Telefone</h3>
+                        <p>(11) 97998-6400</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>(11) 94512-1465</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>autolocal@gmail.com</p>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="contact-card">
+            <!-- FORM -->
 
-                <div class="contact-icon">
-                    <i class="fa-solid fa-envelope"></i>
+            <form class="contact-form">
+
+                <div class="input-group">
+
+                    <input type="text" placeholder="Seu nome" required>
+
                 </div>
 
-                <div>
-                    <h3>Email</h3>
-                    <p>autolocal@gmail.com</p>
+                <div class="input-group">
+
+                    <input type="email" placeholder="Seu e-mail" required>
+
                 </div>
 
-            </div>
+                <div class="input-group">
 
-            <!-- BUTTONS -->
+                    <input type="text" placeholder="Seu telefone">
 
-            <div class="contact-buttons">
+                </div>
 
-                <button class="whatsapp-contact">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    WhatsApp
+                <div class="input-group">
+
+                    <textarea placeholder="Digite sua mensagem..." rows="6" required></textarea>
+
+                </div>
+
+                <button type="submit" class="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar Mensagem
+
                 </button>
 
-                <button class="email-contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    Enviar E-mail
-                </button>
-
-            </div>
+            </form>
 
         </div>
 
-        <!-- FORM -->
+    </section>
 
-        <form class="contact-form">
+    <!-- MODAL TERMOS -->
 
-            <div class="input-group">
+    <div class="terms-modal" id="termsModal">
 
-                <input
-                    type="text"
-                    placeholder="Seu nome"
-                    required
-                >
+        <div class="terms-content">
 
-            </div>
+            <span class="close-modal" id="closeTerms">
+                &times;
+            </span>
 
-            <div class="input-group">
+            <h2>Termos de Concordância</h2>
 
-                <input
-                    type="email"
-                    placeholder="Seu e-mail"
-                    required
-                >
+            <p>
+                Ao utilizar a plataforma AutoLoc, o usuário concorda
+                com os Termos de Uso, Política de Privacidade e com
+                o compartilhamento de localização para melhorar a
+                experiência na busca de serviços automotivos.
+            </p>
 
-            </div>
+            <p>
+                O usuário também concorda com o fornecimento e uso
+                de dados necessários para funcionamento da plataforma,
+                incluindo informações como nome, telefone, CPF, CNPJ,
+                CEP, endereço e demais dados cadastrais.
+            </p>
 
-            <div class="input-group">
+            <p>
+                Essas informações poderão ser utilizadas para
+                autenticação, segurança, comunicação, localização
+                de serviços próximos e melhoria da experiência
+                dentro da plataforma AutoLoc.
+            </p>
 
-                <input
-                    type="text"
-                    placeholder="Seu telefone"
-                >
+            <p>
+                A AutoLoc não se responsabiliza por negociações,
+                pagamentos ou serviços realizados entre usuários
+                e empresas cadastradas na plataforma.
+            </p>
 
-            </div>
-
-            <div class="input-group">
-
-                <textarea
-                    placeholder="Digite sua mensagem..."
-                    rows="6"
-                    required
-                ></textarea>
-
-            </div>
-
-            <button type="submit" class="send-btn">
-
-                <i class="fa-solid fa-paper-plane"></i>
-
-                Enviar Mensagem
-
+            <button class="accept-btn" id="closeButton">
+                Entendi
             </button>
 
-        </form>
+        </div>
 
     </div>
-
-</section>
-
-
 
     <!-- FOOTER -->
 
@@ -423,6 +454,10 @@
         </div>
 
     </footer>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
 
 </body>
 
